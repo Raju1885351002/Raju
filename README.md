@@ -47,7 +47,7 @@ public class InsertRecords {
     }  
    
   
-    public void insert(String name, double capacity) {  
+    public void insert(String Movie_Name,String Actor_Name,String Actress_Name,double Year_of_release,String Director_name) {  
         String sql = "INSERT INTO Movies(Movie_Name, Actor_Name,Actress_Name,Year_of_release,Director_name) VALUES(?,?,?,?,?)";  
    
         try{  
@@ -66,8 +66,7 @@ public class InsertRecords {
    
     public static void main(String[] args) {  
    
-        InsertRecords app = new InsertRecords();  
-        // insert three new rows  
+        InsertRecords app = new InsertRecords();   
         app.insert("Gabbarsingh","PavanKalyan","Shruthi Haasan",2012,"Harish Shankar");  
         app.insert("Bhahubali","Prabhas","Anushka",2015,"S.S.Rajamouli");  
         app.insert("MCA","Nani","Sai Pallavi",2017,"Venu SriRam");
